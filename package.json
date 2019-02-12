@@ -1,5 +1,5 @@
 {
-  "name": "youtube-video-download-links",
+  "name": "youtube-video-links",
   "version": "1.0.0",
   "description": "This module is used to get the downloadable links of a Youtube video",
   "main": "index.js",

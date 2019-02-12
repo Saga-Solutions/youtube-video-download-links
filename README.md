@@ -1,4 +1,4 @@
-# youtube-video-download-links
+# youtube-video-links
 
 This module is used to get the downloadable video links from a Youtube video link.
 
