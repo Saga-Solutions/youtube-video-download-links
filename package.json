@@ -1,0 +1,19 @@
+{
+  "name": "youtube-video-download-links",
+  "version": "1.0.0",
+  "description": "This module is used to get the downloadable links of a Youtube video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamsinghrathi/youtube-video-download-links.git"
+  },
+  "author": "Shubham Rathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhamsinghrathi/youtube-video-download-links/issues"
+  },
+  "homepage": "https://github.com/shubhamsinghrathi/youtube-video-download-links#readme"
+}
