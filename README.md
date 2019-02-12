@@ -4,7 +4,7 @@ This module is used to get the downloadable video links from a Youtube video lin
 
 How to use :-
 
-const youtubeLinks = require("youtube-video-download-links");
+const youtubeLinks = require("youtube-video-links");
 
 youtubeLinks("youtube-video-URL").then(function(data) {
     //data - video URLs in array of object format
