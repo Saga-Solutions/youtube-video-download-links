@@ -36,7 +36,7 @@ module.exports = youtubeDownloadLinkCreator = async(link) => {
             try {
                 let splited = link.split("?");
                 if(splited.length === 1) {
-                    id = link.split("/")[1];
+                    id = link.split("/").pop();
                 } else {
                     let elems = splited[1].split("&");
                     for(let i=0; i<elems.length; i++) {
