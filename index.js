@@ -34,12 +34,17 @@ module.exports = youtubeDownloadLinkCreator = async(link) => {
             }
             let id = "";
             try {
-                let elems = link.split("?")[1].split("&");
-                for(let i=0; i<elems.length; i++) {
-                    let query = elems[i].split("=");
-                    if(query[0] == "v") {
-                        id = query[1]
-                        break;
+                let splited = link.split("?");
+                if(splited.length === 1) {
+                    id = link.split("/")[1];
+                } else {
+                    let elems = splited[1].split("&");
+                    for(let i=0; i<elems.length; i++) {
+                        let query = elems[i].split("=");
+                        if(query[0] == "v") {
+                            id = query[1]
+                            break;
+                        }
                     }
                 }
             } catch(er){}
