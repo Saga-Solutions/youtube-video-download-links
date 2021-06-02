@@ -69,37 +69,7 @@ module.exports = youtubeDownloadLinkCreator = async (link) => {
             let url = `https://api.y2mate.guru/api/convert`;
             getScript(url, id).then((data) => {
                 let urlData = data;
-
-                let x = urlData.split("&");
-                let t = {}, g = [], h = {};
-
-                if (urlData.search(/status=fail/i) != -1) {
-                    return reject(new Error("Some error in the video format"));
-                } else {
-                    x.forEach(element => {
-                        let c = element.split("=");
-                        let n = c[0]; let v = c[1];
-                        t[n] = v;
-                        h[n] = decodeURIComponent(v);
-                    });
-                    let streams = decodeURIComponent(t['url_encoded_fmt_stream_map']).split(",");
-                    streams.forEach(element => {
-                        x = element.split("&");
-                        x.forEach(elm => {
-                            let c = elm.split("=");
-                            let n = c[0]; v = c[1];
-                            h[n] = decodeURIComponent(v);
-                        })
-                        g.push({
-                            url: h["url"] || "",
-                            quality: h["quality"] || "",
-                            itag: h["itag"] || "",
-                            type: h["type"] || "",
-                            error: false
-                        })
-                    });
-                    return resolve(g);
-                }
+                return resolve(urlData);
             }).catch((err) => {
                 reject(new Error("Some error on URL data fetch"));
             })
