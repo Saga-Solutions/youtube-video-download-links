@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shubhamsinghrathi/youtube-video-download-links.git"
+    "url": "git+https://github.com/Saga-Solutions/youtube-video-download-links.git"
   },
   "author": "Shubham Rathi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shubhamsinghrathi/youtube-video-download-links/issues"
+    "url": "https://github.com/Saga-Solutions/youtube-video-download-links/issues"
   },
-  "homepage": "https://github.com/shubhamsinghrathi/youtube-video-download-links#readme"
+  "homepage": "https://github.com/Saga-Solutions/youtube-video-download-links#readme"
 }
